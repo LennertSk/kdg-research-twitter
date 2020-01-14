@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);@import url(https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap);* {
+  margin: 0;
+}
+
+body {
+  background: #1B1B1B;
+  color: #E9E9E9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#app {
+  max-width: 550px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 550px) {
+  #app {
+    border: 2px solid #1B1B1B;
+    box-shadow: 0px 0px 52px 8px rgba(0, 0, 0, 0.35);
+  }
+}
+html {
+  height: 100%;
+}
+
+.navbar, .wrapper-footer {
+  background: #FC2F4A;
+  width: 100%;
+  box-shadow: 0px 10px 8px -1px rgba(0, 0, 0, 0.37);
+}
+.navbar .navbar-header, .wrapper-footer .navbar-header {
+  font-family: "Racing Sans One", cursive;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.wrapper-content-main {
+  min-height: 100%;
+  margin-bottom: -60px;
+}
+
+.wrapper-footer,
+.push {
+  height: 50px;
+}
+
+.wrapper-footer {
+  height: 60px;
+}
+.wrapper-footer .footer-header {
+  font-family: "Racing Sans One", cursive;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.wrapper-content-main {
+  width: 90%;
+  margin: auto;
+}
+
+.content-main-overview {
+  padding-top: 20px;
+}
+.content-main-overview svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.content-main-overview table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  table-layout: fixed;
+}
+.content-main-overview p {
+  font-family: "Racing Sans One", cursive;
+  color: #303030;
+}
+.content-main-overview td {
+  text-align: center;
+  padding: 8px;
+  width: 8%;
+}
+.content-main-overview td:nth-child(even) p:before {
+  content: "linebreak";
+  display: block;
+  color: #1B1B1B;
+}
+.content-main-overview td:nth-child(odd) p:after {
+  content: "linebreak";
+  display: block;
+  color: #1B1B1B;
+}
+
+.wrapper-svg {
+  padding: 120px 30px 0 0;
+  text-align: right;
+  float: right;
+}
+
+.shortlink {
+  color: #E9E9E9;
+  background-color: #FC2F4A;
+  margin-top: 2%;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.svg-car {
+  position: absolute;
+  padding-left: 2px;
+}
+
+#mark {
+  color: #FC2F4A;
+  margin-bottom: 20px;
+}
+
+.content-main-svg {
+  position: relative;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.content-header {
+  padding: 0px 0 20px 0;
+  text-align: center;
+}
+.content-header span {
+  height: 20px;
+  text-decoration: none;
+  color: #FC2F4A;
+  background: #1B1B1B;
+  padding: 0 10px;
+}
+.content-header p {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #FC2F4A;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.content-main-teams table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.content-main-teams #middle {
+  text-align: center;
+}
+.content-main-teams tr td {
+  border-bottom: 1px solid #303030;
+}
+.content-main-teams td {
+  padding: 5px;
+}
+.content-main-teams .team-color {
+  padding-top: 8px;
+}
+.content-main-teams .team-wins {
+  background: #FFB021;
+  color: #303030;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.wrapper-extra-info {
+  background-color: rgba(27, 27, 27, 0.5);
+  display: none;
+  color: #E9E9E9;
+}
+.wrapper-extra-info table {
+  padding-top: 20px;
+  margin: auto;
+  width: 70%;
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 20px;
+}
+.wrapper-extra-info svg {
+  padding-top: 5px;
+}
+.wrapper-extra-info td, .wrapper-extra-info tr {
+  padding: 7px;
+}
+.wrapper-extra-info .extra-info-svg-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.wrapper-footer {
+  margin-top: 30px;
+}
+.wrapper-footer a {
+  text-decoration: none;
+  color: #E9E9E9;
+}
+.wrapper-footer ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.wrapper-footer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 15px 45px;
+}
+.wrapper-footer .div-li {
+  padding: 0;
+  border-left: 2px solid #E9E9E9;
+}
+.wrapper-footer #showCursor {
+  cursor: pointer;
+}

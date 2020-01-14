@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap');
+
+// FONT & COLOR STYLES //
+
+$color-pink: #FC2F4A;
+$color-white: #E9E9E9;
+$color-black: #1B1B1B;
+$color-grey: #303030;
+$font-header: 'Racing Sans One', cursive;
+$font-text: 'Open Sans', sans-serif;
+
+// GLOBAL STYLES //
+*{
+  margin: 0;
+}
+
+body{
+  background: $color-black;
+  color: $color-white;
+  font-family: $font-text;
+  font-size: 16px;
+}
+
+#app {
+  max-width: 550px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 550px) {
+  #app {
+    border: 2px solid $color-black;
+    box-shadow: 0px 0px 52px 8px rgba(0,0,0,0.35);
+  }
+}
+
+html { height: 100%; }
+
+// NAVIGATION - NAVBAR && FOOTER //
+.navbar, .wrapper-footer {
+  background: $color-pink;
+  width: 100%;
+  -webkit-box-shadow: 0px 10px 8px -1px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 10px 8px -1px rgba(0,0,0,0.37);
+  box-shadow: 0px 10px 8px -1px rgba(0,0,0,0.37);
+  .navbar-header {
+    font-family: $font-header;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.wrapper-content-main { min-height: 100%; margin-bottom: -60px;}
+.wrapper-footer,
+.push {
+  height: 50px;
+}
+.wrapper-footer {
+  height: 60px;
+
+  .footer-header{
+    font-family: $font-header;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+}
+
+
+
+// WRAPPER MAIN - WRAPPER //
+.wrapper-content-main {
+  width: 90%;
+  margin: auto;
+}
+
+
+// WRAPPER OVERVIEW - LIST CARS //
+.content-main-overview {
+  padding-top: 20px;
+  svg {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    table-layout: fixed ;
+  }
+  p {
+    font-family: $font-header;
+    color: $color-grey;
+  }
+  td {
+    text-align: center;
+    padding: 8px;
+    width: 8%;
+  }
+  td:nth-child(even) p:before {
+    content: 'linebreak';
+    display: block;
+    color: $color-black;
+  }
+  td:nth-child(odd) p:after {
+    content: 'linebreak';
+    display: block;
+    color: $color-black;
+  }
+}
+
+// TRACK DISPLAY - SVG //
+.wrapper-svg {
+  // padding: 35% 7% 0 0;
+  padding: 120px 30px 0 0;
+  text-align: right;
+  float: right;
+}
+.shortlink {
+  color: $color-white;
+  background-color: $color-pink;
+  margin-top: 2%;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.svg-car {
+  position: absolute;
+  padding-left: 2px;
+}
+#mark { color: $color-pink; margin-bottom: 20px; }
+.content-main-svg {
+  position: relative;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+// LINK TO DAILY - AHREF //
+.content-header{
+  padding: 0px 0 20px 0;
+  text-align: center;
+  span {
+    height: 20px;
+    text-decoration: none;
+    color: $color-pink;
+    background: $color-black;
+    padding:0 10px;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $color-pink;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+  }
+}
+
+// TEAM OVERVIEW - LIST //
+.content-main-teams {
+  table {
+    border-collapse: collapse;
+    width: 100%;;
+  }
+  #middle{ text-align: center;}
+  tr td{
+    border-bottom: 1px solid $color-grey;
+  }
+  td {
+    padding: 5px;
+  }
+  .team-color {
+    padding-top: 8px;
+  }
+  .team-wins {
+    background: #FFB021;
+    color: $color-grey;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+// EXTRA INFO - HIDDEN //
+.wrapper-extra-info {
+  background-color: rgba($color: $color-black, $alpha: 0.5);
+  display: none;
+  color: $color-white;
+
+  table {
+    padding-top: 20px;
+    margin: auto;
+    width: 70%;
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 20px;
+  }
+  svg { padding-top: 5px;}
+  td, tr {
+    padding: 7px;
+  }
+  .extra-info-svg-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+// FOOTER - LINK //
+.wrapper-footer{
+  margin-top: 30px;
+  a{
+    text-decoration: none;
+    color: $color-white;
+  }
+  ul {
+    width: 100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px 45px;
+  }
+  .div-li {
+    padding: 0;
+
+    border-left: 2px solid $color-white;
+  }
+  #showCursor { cursor: pointer; }
+}
