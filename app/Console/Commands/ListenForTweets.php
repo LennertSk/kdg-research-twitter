@@ -29,7 +29,7 @@ class ListenForTweets extends Command
      */
     public function handle()
     {
-
+        \Log::info("Command started");
         $tagsToListenTo = array(
             '@MercedesAMGF1', '@redbullracing', '@ScuderiaFerrari', '@WilliamsRacing', '@McLarenF1', '@HaasF1Team', '@alfaromeoracing',  '@ToroRosso', 
             '@RacingPointF1', '@RenaultF1Team', 
